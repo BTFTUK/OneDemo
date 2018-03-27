@@ -70,8 +70,8 @@ public class SpringView extends View {
         mSpringPaint.setStrokeWidth(2);
         mTotalHeight = UIUtil.getScreenHeight(mContext);
         mTotalWidth = UIUtil.getScreenWidth(mContext);
-        mStartPoint = new PointF(50, mTotalHeight / 2);
-        mEndPoint = new PointF(mTotalWidth - 50, mTotalHeight / 2);
+        mStartPoint = new PointF(150, mTotalHeight / 2);
+        mEndPoint = new PointF(mTotalWidth - 150, mTotalHeight / 2);
         mBallPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mBallPaint.setStyle(Paint.Style.FILL);
         mBallRadius = 30;

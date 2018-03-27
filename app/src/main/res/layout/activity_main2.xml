@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yk.onedemo.Main2Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:elevation="0dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#ddee67" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#f04ea2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="#30ff42" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#fa43ff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#f96363" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#a06442" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f40"
+        app:layout_behavior="com.yk.onedemo.widget.HomePageBehavior"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="测试测试"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
